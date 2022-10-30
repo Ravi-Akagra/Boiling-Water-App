@@ -23,7 +23,7 @@ Here's how the movie page looks
 In future, I might add "Watch Trailer" functionality.
 
 ### Comments
-Implemented comments using Firebase Firestore. Each movie is a collection, each comment being a document, which contains information like content, username, link to profile pic and time of comment.
+Implemented comments using Firebase Firestore. Each movie is a collection, each comment being a document, which contains information like content, username, link to profile pic and time of comment.The comments for each movie is sorted such that latest comment comes on top.
 Here's how Comments look
 >![comments1](https://user-images.githubusercontent.com/79597232/198895240-f2a6a50f-0c92-4041-87c5-fc7f442e8cc4.jpg)
 
