@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MoviePageActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/backdrop"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        <TextView
+            android:id="@+id/title_moviepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/backdrop"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="10dp"
+            android:text="The Watcher of the himalaya and the owner of the fucking baybelade "/>
+        <TextView
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/title_moviepage"
+            android:text="After escaping from an Estonian psychiatric facility, Leena Klammer travels to America by impersonating Esther, the missing daughter of a wealthy family. But when her mask starts to slip, she is put against a mother who will protect her family from the murderous “child” at any cost."
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/Imdb_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IMDB RATING : 6.9"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plot" />
+        <TextView
+            android:id="@+id/Language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/Imdb_rating"
+            android:text="LANGUAGE : English, Estonian"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/runtime_moviepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/Language"
+            android:text="RUNTIME : 199 mins"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/release_date_moviepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/runtime_moviepage"
+            android:text="RELEASE DATE : 19 Aug 2022"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/cast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/release_date_moviepage"
+            android:text="CAST : Isabelle Fuhrman, Julia Stiles, Rossif Sutherland"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment"
+            android:background="@drawable/rounded_corners"
+            android:textColor="@color/black"
+            android:padding="3dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textSize="23sp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/commentbox"
+            app:layout_constraintBottom_toBottomOf="@+id/commentbox"/>
+        <EditText
+            android:id="@+id/commentbox"
+            app:layout_constrainedWidth="false"
+            android:layout_width="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:maxHeight="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/comment_button"
+            app:layout_constraintTop_toBottomOf="@id/cast"
+            android:inputType="textCapSentences"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:hint="@string/add_a_comment"
+            android:scrollbars="vertical"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/commentbox"
+            tools:listitem="@layout/comment_tile"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <TextView
+            android:id="@+id/noCommentsYet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/commentRV"
+            android:text="@string/no_comments"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

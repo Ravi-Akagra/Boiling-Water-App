@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688014328370",
+    "project_id": "boiling-water-app",
+    "storage_bucket": "boiling-water-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688014328370:android:3f3961eafec98060fab22b",
+        "android_client_info": {
+          "package_name": "com.akagra.boiling_water_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688014328370-hgalh8vo3j6t567uv8rpv2v8s71lo2n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANh5jEYRo_anPbhKXDXO7XcUiQkiIRaw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688014328370-hgalh8vo3j6t567uv8rpv2v8s71lo2n3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

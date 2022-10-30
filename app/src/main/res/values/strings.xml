@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" formatted="true">Boiling Water</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_a_comment">Add a Comment</string>
+    <string name="comment">Comment</string>
+    <string name="no_comments">No Comments Yet</string>
+    <string name="vyatha">DISCLAIMER: \n\nYe mera ek personal project h jo maine Android seekhne ke liye bnaya hai. Ye sign in Google ka official sign in hai, Jo tumhe baaki websites pe milta h jaise Reddit,Twitter etc. Mai tumhara koi data nhi le rha.. TO PLEASE MUJHE BAAR BAAR YE POOCHNA BAND KARO KI ISME KOI VIRUS TO NHI HAI... Nahi h bhai... Virus bnana aata to abhi placed hota aur 1cr ka package hota mera.. If you got a copy of this apk by me, you are one of the few people I actually trust who can constructively criticize me and help me improve.. Please stop asking lame questions like that \n\nThank you</string>
+    <string name="yes_logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout_btn">Logout</string>
+</resources>
